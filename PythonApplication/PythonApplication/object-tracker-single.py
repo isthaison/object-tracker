@@ -79,14 +79,14 @@ if __name__ == "__main__":
     group.add_argument('-v', "--videoFile", help="Path to Video File")
     parser.add_argument('-l', "--dispLoc", dest="dispLoc", action="store_true")
     
-    #rgs = vars(parser.parse_args())
+    #args = vars(parser.parse_args())
 
     # Get the source of video
     #if args["videoFile"]:
-    if 1==1:
+    if 1==2:
         #source = args["videoFile"]
         source = "D:\Raspberry\object-tracker\PythonApplication\PythonApplication\docs\demo-video-single.avi"
     else:
-        source = int(args["deviceID"])
+        source = 0
     #run(source, args["dispLoc"])
     run(source, True)
